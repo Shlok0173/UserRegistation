@@ -5,6 +5,6 @@ public class UserMain {
 	public static void main(String args[]) {
 		System.out.println("Welcome to the User Registration Problem using Regex!!");
 		UserRegistation user = new UserRegistation();
-		user.password("Pass@123");
+		user.password("PASS@123");
 	}
 }

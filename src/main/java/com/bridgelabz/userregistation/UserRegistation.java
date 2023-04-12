@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistation {
 
 	 public void password(String password){
-	        String regex = "[A-Z]{1}[a-z]*@[0-9]*$";
+	        String regex = "[A-Z]{4}[a-z]*@[0-9]*$";
 	         Pattern pattern = Pattern.compile(regex);
 	        Matcher matcher = pattern.matcher(password);
 	        boolean valid=matcher.matches();
