@@ -1,10 +1,10 @@
 package com.bridgelabz.userregistation;
 
 public class UserMain {
-               
-	    public static void main(String args[]) {
-	 System.out.println("Welcome to the User Registration Problem using Regex!!");
-     UserRegistation user = new UserRegistation();
-     user.mobileNumber("+91 9168112901");
-}
+
+	public static void main(String args[]) {
+		System.out.println("Welcome to the User Registration Problem using Regex!!");
+		UserRegistation user = new UserRegistation();
+		user.password("Pass@123");
+	}
 }
