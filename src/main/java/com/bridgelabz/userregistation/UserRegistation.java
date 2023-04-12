@@ -5,16 +5,13 @@ import java.util.regex.Pattern;
 
 public class UserRegistation {
 
-	 public void password(String password){
-	        String regex = "[A-Z]{4}[a-z]*@[0-9]*$";
+	 public boolean firstName(String testString){
+	        String regex = "[A-Z]{1}[a-z]*";
 	         Pattern pattern = Pattern.compile(regex);
-	        Matcher matcher = pattern.matcher(password);
-	        boolean valid=matcher.matches();
-	        if (valid==true){
-	            System.out.println("Your Password "+" " +password+" " +" is Valid");
-	        }
-	        else{
-	            System.out.println("Your Password "+ " " +password+" "+" is Invalid");
+	        Matcher matcher = pattern.matcher(testString);
+	        boolean valid=matcher.find();
+	        return valid;
+	      
 	        }
 }
-}
+
