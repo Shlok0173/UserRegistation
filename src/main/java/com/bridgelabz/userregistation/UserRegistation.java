@@ -5,16 +5,16 @@ import java.util.regex.Pattern;
 
 public class UserRegistation {
 
-	 public void lastName(String lastName){
-	        String regex = "^[A-Z]{1}[a-z]{2,}$";
-	        Pattern pattern = Pattern.compile(regex);
-	        Matcher matcher = pattern.matcher(lastName);
+	 public void mobileNumber(String mobileNumber){
+	        String regex = "^[+][0-9]{2} [6-9]{1}[0-9]{9}$";
+	         Pattern pattern = Pattern.compile(regex);
+	        Matcher matcher = pattern.matcher(mobileNumber);
 	        boolean valid=matcher.matches();
 	        if (valid==true){
-	            System.out.println("Your First name "+lastName+" is Valid");
+	            System.out.println("Your Mobile Number "+mobileNumber+" is Valid");
 	        }
 	        else{
-	            System.out.println("Your First name "+lastName+" is Invalid");
+	            System.out.println("Your First name "+mobileNumber+" is Invalid");
 	        }
 }
 }
